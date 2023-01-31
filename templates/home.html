@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Chat API by Mansur Fayziev</title>
+</head>
+
+<body>
+    <center class="">
+        <div class="text-white shadow-lg fw-bold bg-success p-5">
+            <h1 class=" mb-3">Welcome to Chat API</h1>
+            <div style="border-bottom: 1px solid rgb(255, 255, 255); width: 600px;"></div>
+            <p class="mt-2 " style="font-size: 20px;">Author: <span class="fw-bold text-warning"> Mansur Fayziev</span></p>
+            <a href="{% url 'docs' %}" class=" btn btn-outline-dark">Documentation</a>
+            <a href="{% url 'message' %}" class="btn btn-primary">Messages</a>
+            <a href="{% url 'user' %}" class="btn btn-warning">Users</a>
+        </div>
+
+        <div class=" bg-body shadow-lg border" style="width: 400px; height: 150px; margin-top:80px ;">
+            <h4 class="m-2 ml-3 mb-4" style="text-align: left;">Urls</h4>
+            <a href="{% url 'docs' %}" class=" btn btn-outline-success">Documentation</a>
+            <a href="{% url 'message' %}" class="btn btn-primary">Messages</a>
+            <a href="{% url 'user' %}" class="btn btn-warning">Users</a>
+
+        </div>
+
+    </center>
+
+</body>
+
+</html>
